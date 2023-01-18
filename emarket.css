@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navigation menu */
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+}
+
+.navbar-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+    
+}
+
+.navbar-list ul li {
+    padding: 0 20px;
+    list-style-type: none;
+    transition: all 0.3 ease;
+    }
+ 
+    .navbar-list ul li a{
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3 ease;
+    }
+.navbar-list ul li a:hover
+ {
+    color: #088178;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+
+a{
+    text-decoration: none;
+}
+
+/* dropdown navigation Category */
+.Category{
+    background: #678983;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    
+}
+
+
+.dropbtn{
+    background: #82AAE3;
+    border: 1px solid #82AAE3;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px;
+    margin: 20px ;
+    width: 300px;
+    cursor: pointer;
+}
+
+#vert-nav{
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 300px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.vert-nav-list{
+    padding : 15px;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.vert-nav-list a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.vert-nav-list:hover{
+    cursor: pointer;
+   background-color: #227C70;
+}
+
+.show{
+    display: block;
+}
+
+.new a{
+ color: #1a1a1a;
+
+}
+
+.newbtn{
+    background: #82AAE3;
+    border: 1px solid #82AAE3;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px;
+    margin: 20px ;
+    width: 300px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    }
+
+.goods a{
+    color: #1a1a1a;
+}    
+
+.goodsbtn{
+    background: #82AAE3;
+    border: 1px solid #82AAE3;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px;
+    margin: 20px ;
+    width: 300px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
