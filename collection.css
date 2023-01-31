@@ -1,4 +1,4 @@
-    *{
+*{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
     box-shadow: 0 5px 15px rgb(0,0,0,0 .06);
 }
 
-.navbar-list ul { 
+.navbar-list ul {
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -47,18 +47,16 @@
 a{
     text-decoration: none;
 }
-
-/* dropdown navigation Category */
-.container{
+/* dropdown menu */
+.second-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #678983;
+    background-color: #088178;
+    
 }
 
-
 .Category{
-    
     height: 80px;
     position: relative;
 }
@@ -68,13 +66,14 @@ a{
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
     z-index: 1;
+}    
+
+.dropdown-content ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #1a1a1a;
 }
 
-.dropdown-content ul li a{
-    text-decoration: none;
-    color: #1a1a1a;
-    display: inline-block;
-}
 .dropbtn{
     background: #82AAE3;
     border: 1px solid #82AAE3;
@@ -101,8 +100,6 @@ a{
 
 }
 
-
-
 .vert-nav-list:hover{
     cursor: pointer;
    background-color: #227C70;
@@ -126,13 +123,14 @@ a{
     margin: 20px ;
     width: 300px;
     cursor: pointer;
+    display: inline-block;
     text-decoration: none;
     }
 
 .goods a{
     color: #1a1a1a;
 }    
- 
+
 .goodsbtn{
     background: #82AAE3;
     border: 1px solid #82AAE3;
@@ -142,50 +140,7 @@ a{
     margin: 20px ;
     width: 300px;
     cursor: pointer;
+    display: inline-block;
     text-decoration: none;
 }
 
-.carousel{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-.carousel-container{
-    width: 1000px;
-    height: 600px;
-    border-radius: 10px;
-    overflow: hidden; 
-}
-
-.slider{
-    display: flex;
-    transition: transform 0.8 ease;
-}
-
-.slider img{
-    max-width: 100%;
-    margin-right: 10px; 
-}
-
-#prev,
-#next{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    /* top: 50%; */
-    transform: translate(-5%, -50%);
-    cursor: pointer;
-}
-
-#prev{
-    left: 5%;
-}
-
-#next{
-    right: 5%;
-}
-
-#next.disable{
-    pointer-events: none;
-    opacity: 0.5;
-}

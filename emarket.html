@@ -15,7 +15,7 @@
         
             <nav class="navbar">
                 <div class="navbar-container">
-                <a href="" class="logo">LOGO</a>
+                <a href="" class="logo">LOGO </a>
                
                 <div class="navbar-list">
                 <ul >
@@ -32,9 +32,13 @@
             
      
           
-    <div class="Category">
-        <div id="dropdown" class="dropdown-content">
-            <button onclick="myFunction()" class="dropbtn">Catalog</button>
+    <div class="container">
+
+        
+            <div class="Category">
+        
+            <button onclick="buttonClick()" class="dropbtn"> Catalog </button>
+            <div id="categDrpDwn"class="dropdown-content">
             <ul id="vert-nav">
                 <li class="vert-nav-list"><a href="Outwear.html" class="current">Outwear</a></li>
                 <li class="vert-nav-list"><a href="Shirts.html">Shirts</a></li>
@@ -43,16 +47,33 @@
                 <li class="vert-nav-list"><a href="shoes.html">Shoes</a> </li>
                 <li class="vert-nav-list"><a href="Accessories.html">Accessories</a></li>
             </ul>
-        </div>
+            </div>
+    </div>        
         <div class="new">
-            <button class="newbtn"><a href="">New Collection</a></button>
+            <button class="newbtn"><a href="collection.html"> New Collection </a></button>
         </div>
         <div class="goods">
-            <button class="goodsbtn"><a href="">Discounted Goods</a></button>
+            <button class="goodsbtn"><a href="discounted.html"> Discounted Goods </a></button>
         </div>    
     </div>
+
+
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <figure class="slider">
+            <img src="/images/image-1.jpg" alt="">
+            <img src="/images/image-2.jpg" alt="">
+           </figure>
+        </div>
+
+        <img src="/svg/left-arrow.svg.svg" alt="prev" id="prev">
+        <img src="/svg/right-arrow.svg.svg" alt="next" id="next">
+
+    </div>
+
     
-    
+</div>
  <script src="emarket.js"></script>
 </body>
 </html>
