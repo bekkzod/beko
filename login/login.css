@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+.logo{
+    padding-left: 20px;
+    text-decoration: none;
+}
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-list ul{
+    
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-right: 40px;
+}
+
+.navbar-list ul li{
+    padding: 30px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.navbar-list ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-list a:hover{
+    color: #1C6758;
+}
+
+.login-page{
+    font-family: sans-serif;
+    background-image: url(/images/loginpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container{
+    width: 350px;
+    margin: 5% auto;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0,0.2);
+    box-shadow: 0 0 15px #333;
+}
+.header{
+    padding-top: 75px;
+    text-align: center;
+}
+.header h1{
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+.main{
+    text-align: center;
+}
+
+.main input, button{ 
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.main button{
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+
+.main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+
+.main span{
+    position: relative ;
+}
+
+.main i{
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    font-size: 16px;
+    color: #333;
+}

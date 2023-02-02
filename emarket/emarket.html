@@ -9,48 +9,47 @@
 </head>
 <body>
     <!-- Navigation bar -->
-            <nav class="navbar">
-                <div class="navbar-container">
-                <a href="" class="logo">LOGO </a>
-               
-                <div class="navbar-list">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="" class="logo">LOGO </a>
+               <div class="navbar-list">
                 <ul >
                     <li><a href="/emarket/emarket.html" class="active">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    
                 </ul>
-            </div>
+                
+                    <div class="login-container">
+                        <button id="login" class="login"><a href="/login/login.html">Sign Up</a></button>
+                    </div>
                 </div>
-            </nav> 
-
-            
-     
-          
-    <div class="container">
-
-        
-            <div class="Category">
-        
-            <button onclick="buttonClick()" class="dropbtn"> Catalog </button>
-            <div id="categDrpDwn"class="dropdown-content">
-            <ul id="vert-nav">
-                <li class="vert-nav-list"><a href="Outwear.html" class="current">Outwear</a></li>
-                <li class="vert-nav-list"><a href="Shirts.html">Shirts</a></li>
-                <li class="vert-nav-list"><a href="Pants.html">Pants</a></li>
-                <li class="vert-nav-list"><a href="Sports.html">Sportswear</a> </li>
-                <li class="vert-nav-list"><a href="shoes.html">Shoes</a> </li>
-                <li class="vert-nav-list"><a href="Accessories.html">Accessories</a></li>
-            </ul>
-            </div>
-    </div>        
-        <div class="new">
-            <button class="newbtn"><a href="/collection/collection.html"> New Collection </a></button>
+               
         </div>
-        <div class="goods">
+    </nav> 
+
+        
+        <div id="container" class="container">
+            <div class="Category">
+                <button onclick="buttonClick()" class="dropbtn"> Catalog </button>
+                <div id="categDrpDwn"class="dropdown-content">
+                    <ul id="vert-nav">
+                        <li class="vert-nav-list"><a href="Outwear.html" class="current">Outwear</a></li>
+                        <li class="vert-nav-list"><a href="Shirts.html">Shirts</a></li>
+                        <li class="vert-nav-list"><a href="Pants.html">Pants</a></li>
+                        <li class="vert-nav-list"><a href="Sports.html">Sportswear</a> </li>
+                        <li class="vert-nav-list"><a href="shoes.html">Shoes</a> </li>
+                        <li class="vert-nav-list"><a href="Accessories.html">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>        
+            
+            <div class="new">
+            <button class="newbtn"><a href="/collection/collection.html"> New Collection </a></button>
+            </div>
+        
+            <div class="goods">
             <button class="goodsbtn"><a href="/discounts/discounted.html"> Discounted Goods </a></button>
-        </div>    
+            </div>    
     </div>
 
 
@@ -58,8 +57,8 @@
     <div class="carousel">
         <div class="carousel-container">
             <figure class="slider">
-            <img src="/images/image-1.jpg" alt="">
-            <img src="/images/image-2.jpg" alt="">
+            <img src="/images/image-1.jpg" id="image-1" alt="">
+            <!-- <img src="/images/image-2.jpg" id="image-2" alt=""> -->
            </figure>
         </div>
 
@@ -68,9 +67,60 @@
 
     </div>
 
+    <footer id="footer" class="footer">
+        <div class="footer-links">
+
+            <div class="social-media">
+               <div class="social-media-cont">
+                    <h3>social-media</h3>
+                    <ul id="social-media-ul">
+                        <li class="social-media-lists">instagram</li>
+                        <li class="social-media-lists">telegram</li>
+                        <li class="social-media-lists">facebook</li>
+                        <li class="social-media-lists">Linked In</li>
+                    </ul>
+                </div>
+             </div>
+
+            <div class="contacts">
+                <div class="social-media-cont">
+                    <h3>contacts</h3>
+                        <ul>
+                            <li class="social-media-lists">(998)91-612-07-22</li>
+                            <li class="social-media-lists">(998)93-414-23-00</li>
+                            <li class="social-media-lists">beko@gmail.com</li>
+                            <li class="social-media-lists">akbar@gmail.com</li>
+                        </ul>
+                        
+                    </div>
+                 </div>
+
+            <div class="about-us">
+                <div class="social-media-cont">
+                    <h3>about us</h3>
+                        <ul>
+                            <li class="social-media-lists">about shop</li>
+                            <li class="social-media-lists">testimonials</li>
+                            <li class="social-media-lists">delivery</li>
+                            <li class="social-media-lists">wishlist</li>
+                            
+                        </ul>
+                </div>
+            </div>
+    
+        </div>
+    
+         
+
+        <div class="social-rights">
+            <div class="rights-container">
+                <p class="rights">&#169 LOGO 2023. All right reserved</p>
+            </div>
+        </div>
+
+    </footer>
     
     
-</div>
  <script src="/emarket/emarket.js"></script>
 </body>
 </html>

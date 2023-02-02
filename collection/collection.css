@@ -8,51 +8,78 @@
 /* navigation menu */
 .navbar-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: #e3e6f3;
-    box-shadow: 0 5px 15px rgb(0,0,0,0 .06);
+    width: 100%;
+   
 }
-
-.navbar-list ul {
+.logo{
+    padding-left: 20px;
+    text-decoration: none;
+}
+.navbar-list{
     display: flex;
-    align-items: center;
-    justify-content: center;    
-    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-list ul{
     
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-right: 40px;
 }
 
-.navbar-list ul li {
-    padding: 0 20px;
+.navbar-list ul li{
+    padding: 30px;
     list-style-type: none;
-    transition: all 0.3 ease;
-    }
- 
-    .navbar-list ul li a{
-    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.navbar-list ul li a{
     text-decoration: none;
+    color: #000;
+}
+
+.navbar-list a:hover{
+    color: #1C6758;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px ;
+}
+.login{
+    width: 80px;
+    height: 40px;
+    text-transform: capitalize;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3 ease;
-    }
-.navbar-list ul li a:hover
- {
-    color: #088178;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
+}
 
-
-a{
+.login a {
+    color: #000;
     text-decoration: none;
 }
+
+.login:hover{
+    cursor: pointer;
+    background: #1C6758;
+}
+
+.login a:hover{
+    color: #EEF2E6;
+}
+
 /* dropdown menu */
 .second-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #088178;
+    background-color: #1C6758;
     
 }
 
@@ -75,8 +102,8 @@ a{
 }
 
 .dropbtn{
-    background: #82AAE3;
-    border: 1px solid #82AAE3;
+    background: #EEF2E6;
+    border: 1px solid #EEF2E6;
     border-radius: 4px;
     font-size: 16px;
     padding: 15px;
@@ -97,26 +124,29 @@ a{
     padding : 15px;
     text-align: center;
     border: 1px solid #000;
-
+    font-size: 18px;
 }
 
 .vert-nav-list:hover{
     cursor: pointer;
-   background-color: #227C70;
+    background-color: #1C6758;
 }
 
+.vert-nav-list a:hover{
+    color:#EEF2E6;
+}
 .show{
     display: block;
 }
 
 .new a{
- color: #1a1a1a;
-
+    color: #1a1a1a;
+    text-decoration: none;
 }
 
 .newbtn{
-    background: #82AAE3;
-    border: 1px solid #82AAE3;
+    background: #EEF2E6;
+    border: 1px solid #EEF2E6;
     border-radius: 4px;
     font-size: 16px;
     padding: 15px;
@@ -127,13 +157,18 @@ a{
     text-decoration: none;
     }
 
+a{
+    text-decoration: none;
+}
+
 .goods a{
     color: #1a1a1a;
+    text-decoration: none;
 }    
 
 .goodsbtn{
-    background: #82AAE3;
-    border: 1px solid #82AAE3;
+    background: #EEF2E6;
+    border: 1px solid #EEF2E6;
     border-radius: 4px;
     font-size: 16px;
     padding: 15px;
@@ -143,4 +178,92 @@ a{
     display: inline-block;
     text-decoration: none;
 }
+/* collection products */
+.collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.collection-container{
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
+.collection-images{
+    width: 100%;
+    height:350px;
+    overflow: hidden;
+}
+.collection-cards{
+    padding: 0 10px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+#collection-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.collection-info{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.collection-brand{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.collection-product-info{
+    text-transform: capitalize;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+.collection-price{
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 40%;
+    padding: 2vh 0;
+}
+
+.catalog-container{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 500px;
+    top: -100px;
+}
+
+
+
+.collection-list{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.collection-list a{
+    list-style-type: none;
+    color:#000;
+}
+
+.collection-list:hover{
+    cursor: pointer;
+    background-color: #1C6758;
+}
